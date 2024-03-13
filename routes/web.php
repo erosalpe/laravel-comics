@@ -15,22 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $data = [
-        [
-            'name' => 'Fabio'
-        ],
-        [
-            'name' => 'Mario'
-        ],
-        [
-            'name' => 'Sara'
-        ],
-        [
-            'name' => 'Alex'
-        ],
-    ];
+    $navItems = config('navBarSite');
+    $arrayComics = config('comics');
 
-    return view('welcome', compact('data'));
+    return view('welcome', compact('navItems'), compact('arrayComics'));
 });
 
 Route::get('/about', function () {

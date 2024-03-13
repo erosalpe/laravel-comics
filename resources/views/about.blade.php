@@ -2,7 +2,11 @@
 
 @section('title', 'Benvenuto | About')
 
-@section('content')
+@section('header')
+    
+@endsection
+
+@section('main')
     <h1>Pagina di about</h1>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut excepturi deleniti cupiditate deserunt sint
