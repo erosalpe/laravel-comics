@@ -10,6 +10,15 @@
     @vite('resources/js/app.js')
     @yield('style')
     <style>
+        #headerInfoBg{
+            background-color: #0c7cec;
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 10px;
+                padding-block: 5px;
+            }
+        }
         #headerBg{
             padding-block: 2rem;
             background-color: white;
@@ -92,6 +101,12 @@
 
 <body>
     <header>
+        <div id="headerInfoBg">
+            <div class="d-flex align-items-center justify-content-end gap-5 w-75 m-auto">
+                <a href="#">DC POWER VISA</a>
+                <a href="#">ADDITIONAL DC SITES</a>
+            </div>
+        </div>
         <div id="headerBg">
             <div class="d-flex align-items-center justify-content-between w-75 m-auto">
                 <a href="/">
