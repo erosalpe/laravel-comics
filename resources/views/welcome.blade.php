@@ -131,6 +131,18 @@
             
         }
         }
+        #footerSignUpBg{
+        background-color: #303030;
+        div{
+            .bottoneCustom{
+                padding: 0.7rem;
+                background-color: #303030;
+                border: 2px solid #0c7cec;
+                color: white;
+                font-weight: bold;
+            }
+        }
+        }
     </style>
 @endsection
 
@@ -316,4 +328,17 @@
             </div>
         </div>
     </div>
+    <div id="footerSignUpBg">
+    <div class="w-75 m-auto d-flex justify-content-between align-items-center py-4">
+        <button class="text-uppercase bottoneCustom">sign-up now!</button>
+        <div class="d-flex gap-4 justify-content-center align-items-center">
+            <span class="text-uppercase text-primary fw-bold fs-5">follow us</span>
+            <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="facebook-icon">
+            <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="twitter-icon">
+            <img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="youtube-icon">
+            <img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="pinterest-icon">
+            <img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="periscope-icon">
+        </div>
+    </div>
+  </div>
 @endsection
