@@ -22,6 +22,7 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-
-    return view('about');
+    $navItems = config('navBarSite');
+    
+    return view('about', compact('navItems'));
 });
