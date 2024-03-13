@@ -75,6 +75,19 @@
                    
             }
 
+            div{
+                p{
+                    padding-left: 32px;
+                    color: white;
+                    font-size: 0.7rem;
+                    opacity: 0.7;
+                    a{
+                        text-decoration: none;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
             #dcBgLogo{
                 position: absolute;
                 top: -50px;
@@ -234,8 +247,14 @@
                     </div>
                 </div>
 
+                <div>
+                    <p>
+                        All Site Content TM and 2020 DC Entertainment, unless otherwise <a href="#">noted here</a>. All rights reserved.<br><a href="#">Cookies Settings</a>.
+                    </p>
+                </div>
+
                 <div id="dcBgLogo">
-                    <img src="../assets/img/dc-logo-bg.png" alt="dcLogo">
+                    <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="dcLogo">
                 </div>
             </div>
         </div>
