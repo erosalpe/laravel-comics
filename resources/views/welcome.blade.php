@@ -18,6 +18,7 @@
         h5{
             color: white;
             opacity: 0.6;
+            font-size: 18px;
         }
         }
         div#backgroundBody{
